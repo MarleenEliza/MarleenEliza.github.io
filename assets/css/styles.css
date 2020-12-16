@@ -1,0 +1,155 @@
+/* 全サイト対象 */
+
+html, body {
+	font-size: 16px;
+	background-color: #808D8E;
+}
+.icon i:hover{
+	color: white;
+}
+
+section {
+	padding: 2.5rem 0;
+}
+
+section:nth-child(even) {
+	background-color: rgb(255, 255, 255);
+	color: #363636;
+}
+
+section:nth-child(odd) {
+	background-color: #FFC491;
+}
+
+.wrapper {
+	display: grid;
+	grid-row-gap: 1.5rem;
+	grid-column-gap: 2rem;
+}
+
+@media only screen and (min-width: 600px) {
+	.wrapper {
+		display: grid;
+		grid-template-columns: 50% 50%;
+		grid-template-rows: auto auto;
+	}
+}
+
+a {
+	color:  #F4A259;
+}
+a:hover {
+	color: white;
+	text-decoration: none;
+}
+
+.title {
+	margin-bottom: 2rem;
+}
+
+/* NavBar関係 */
+
+.nav-bar {
+	background-color: transparent;
+	margin: 0 2rem;
+}
+
+.nav-bar .icon {
+	color: #F4A259;
+}
+
+a.nav-item {
+	color: #dfdfdf;
+}
+
+
+@media screen and (max-width: 768px) {
+	.nav-menu {
+		background-color: #808D8E;
+	}
+	.nav-toggle:hover {
+		background-color: transparent;
+	}
+	.nav-toggle span {
+		background-color: #dfdfdf;
+	}
+	.nav-toggle span:hover {
+		background-color: #fff;
+	}
+}
+
+/* About Me */
+
+.about-me .container {
+	padding: 1rem 2rem;
+}
+
+.avatar {
+	max-height: 12rem;
+	width: 12rem;
+	justify-self: center;
+	padding: 1rem;
+	border-radius: 50%;
+	background: #c0f081;
+}
+
+.spef {
+	margin-bottom: 2rem;
+}
+@media screen and (min-width: 768px){
+	.about-me .container#specifications{
+		text-align: center;
+	}
+}
+
+/* Works */
+
+.card .btn {
+	background-color: #c0f081;
+	color: #5d7c35;
+	min-width: 6.3rem;
+}
+
+.card-img-top {
+	padding: .5rem .5rem 0 .5rem;
+}
+
+/* Contact me */
+footer#contact-me {
+	background-color: #808D8E;
+}
+
+footer .title {
+	color: white;
+}
+
+.contact-methods {
+	display: grid;
+}
+
+.contact-methods .method {
+	display: grid;
+	justify-content: center;
+	grid-template-columns: 15% 60%;
+	grid-template-rows: auto auto;
+	grid-column-gap: .8rem;
+	grid-row-gap: .8rem;
+	font-size: 1.7rem;
+}
+
+.contact-methods .icon-large {
+	display:grid;
+	justify-self: center;
+	align-content: center;
+}
+
+.contact-methods .icon-large i{
+	font-size: unset;
+}
+
+@media screen and (min-width: 768px){
+	.contact-methods {
+		display: flex;
+		justify-content: space-evenly;
+	}
+}

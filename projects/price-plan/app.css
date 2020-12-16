@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+body {
+  background-color: rgb(59, 100, 187);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+html {
+  box-sizing: border-box;
+}
+
+.panel {
+  border-radius: 20px;
+  padding: 15px 20px;
+  width: 100%;
+  max-width: 960px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.pricing-plan {
+  border-bottom: 1px solid rgb(233, 233, 233);
+  background-color: white;
+  margin: 5% 2%;
+  padding: 5%;
+  border-radius: 20px;
+}
+.pricing-plan:last-child {
+  border-bottom: none;
+}
+
+.pricing-img {
+  margin-bottom: 25px;
+  max-width: 100%;
+}
+
+.pricing-header{
+  color: #888;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.pricing-features {
+  margin: 50px 0 20px;
+  color: #016ff9;
+}
+
+.pricing-features-item {
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 15px 0;
+  border-top: 1px solid rgb(233, 233, 233);
+}
+
+.pricing-features:last-child {
+  border-bottom: 2px;
+}
+
+.pricing-price {
+  color: #016ff9;
+  display:block;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.pricing-button {
+  border: 1px solid #9dd1ff;
+  border-radius: 10px;
+  color: #348efe;
+  display: inline-block;
+  padding: 15px 35px;
+  text-decoration: none;
+  margin: 25px 0;
+  transition: all 200ms ease-in-out;
+}
+
+.pricing-button:hover , .pricing-button:focus {
+  background-color: #e1f1ff;
+}
+
+.pricing-button.is-featured {
+  background-color: #48aaff;
+  color:white;
+}
+
+.pricing-button.is-featured:hover, .pricing-button.is-featured:focus  {
+  background-color: #269aff;
+  color:white;
+}
+
+@media(min-width: 900px){
+  .panel{
+    flex-direction: row;
+    background-color: white;
+  }
+  .pricing-plan {
+    border-bottom: none;
+    border-right:1px solid #e1f1ff;
+    border-radius: 0;
+    padding:1%;
+    margin: 5px;
+  }
+  .pricing-plan:last-child {
+    border-right: none;
+  }
+}

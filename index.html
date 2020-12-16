@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Portfolio</title>
+    <!-- css files -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.1/css/bulma.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <nav id="my-nav" class="nav nav-bar">
+        <div class="nav-left">
+            <a href="https://linkedin.com/in/medijkman" class="nav-item">
+                <span class="icon">
+                    <i class="fab fa-linkedin"></i>
+                </span>
+            </a>
+            <a href="https://github.com/MarleenEliza" class="nav-item">
+                <span class="icon">
+                    <i class="fab fa-github"></i>
+                </span>
+            </a>
+            <a href="https://www.wantedly.com/users/144786278" class="nav-item">
+                <span class="icon">
+                    <i class="fas fa-won-sign"></i>
+                </span>
+            </a>
+            <a href="https://www.hackerrank.com/marleeneliz4" class="nav-item">
+                <span class="icon">
+                    <i class="fab fa-hackerrank"></i>
+                </span>
+            </a>
+            <a href="https://exercism.io/profiles/MarleenEliza" class="nav-item">
+                <span class="icon">
+                    <i class="fas fa-code"></i>
+                </span>
+            </a>
+            
+        </div>
+        <div class="nav-right nav-menu">
+            <a class="nav-item" href="#about">About</a>
+            <a class="nav-item" href="#works">Works</a>
+            <a class="nav-item" href="#contact-me">Contact</a>
+        </div>
+        <span class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </span>
+    </nav>
+    <section id="about" class="about-me">
+        <div class="container has-text-centered">
+            <h3 class="title">Marleen Elisabeth Dijkman</h3>
+            <img class="avatar" src="assets/images/icon/avatar_svg.svg">
+        </div>
+        <div class="container">
+            <p class="intro">
+                はじめまして！オランダ出身の日本滞在の初級Front-End開発者です。経験はまだ少ないですが、コーディングが好きでIT業界に入社しました。これからもっとコーディングを勉強し、人を感動させる・喜ばせるアプリケーションを作れるようになることを目指しております。
+            </p>
+        </div>
+        <div id="specifications" class="wrapper container">
+            <div class="spef skills">
+                <h3>Skills</h3>
+                <strong>コーディング</strong>
+                <p>JavaScript、HTML、CSS、クラウドの基礎知識（AWS・Azure）</p>
+                <strong>言語</strong>
+                <p>日本語、英語、オランダ語</p>
+                <strong>ソフトスキル</strong>
+                <p>チームワーク、コミュニケーション力</p>
+            </div>
+            <div class="spef education">
+                <h3>Education</h3>
+                <strong>学歴</strong></strong></strong>
+                <p>ライデン大学の日本学科学士卒業</p>
+                <strong>留学経験</strong>
+                <p>大阪大学1年間、長崎大学５ヶ月間</p>
+                <strong>資格</strong>
+                <p>Azure Administrator Associate</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="works" class="section">
+        <div class="container">
+            <div class="has-text-centered">
+                <h3 class="title is-3">Works</h3>
+            </div>
+            <div class="wrapper">
+                <div class="card" id="memo-it">
+                    <img class="card-img-top" src="assets/images/VueJS-mock.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Memo-It!</h5>
+                        <p class="card-text">Vue JSとVuetifyを利用されるMemoアプリケーション。CSSで完全にResponsiveとなっている。アプリケーション実態はAWSのS3でラン中</p>
+                        <a href="http://memoit-deploy.s3-website-ap-northeast-1.amazonaws.com/" class="btn btn-light">Try</a>
+                        <a href="https://github.com/MarleenEliza/memo-app-vue/tree/main/memo_app" class="btn btn-light">See Code</a>
+                    </div>
+                </div>
+                <!-- <div class="card" id="population">
+                    <img class="card-img-top" src="assets/images/kokumin.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">都道府県別日本の人口</h5>
+                        <p class="card-text">HTML、CSS、Javascriptを利用し都道府県・性別に分けた日本国民のデータを一覧にした。JSで人数によるバーの大きさが指定されている。
+                        </p>
+                        <a href="projects/kokumin/index.html" class="btn btn-light">Try</a>
+                        <a href="#" class="btn btn-light">See Code</a>
+                    </div>
+                </div> -->
+                <div class="card" id="price-plan">
+                    <img class="card-img-top" src="assets/images/price-mock.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Pricing Plan</h5>
+                        <p class="card-text">HTMとCSSを利用し簡単なモダンなCardレイアウト。完全にResponsiveとなっている。</p>
+                        <a href="projects/price-plan/index.html" class="btn btn-light">Try</a>
+                        <a href="https://github.com/MarleenEliza/PracticePricingExercise" class="btn btn-light">See Code</a>
+                    </div>
+                </div>
+                <div class="card" id="price-plan">
+                    <img class="card-img-top" src="assets/images/avatar.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Avatar</h5>
+                        <p class="card-text">自分自身の写真をFlat　Avatar化</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer id="contact-me" class="section">
+        <div class="container">
+            <div class="has-text-centered">
+                <h3 class="title is-3">Contact Me</h3>
+            </div>
+            <div class="contact-methods">
+                <a href="https://linkedin.com/in/medijkman" class="method">
+                    <span class="icon-large">
+                        <i class="fab fa-linkedin"></i>
+                    </span>
+                    <span class="icon-text">LinkedIn</span>
+                </a>
+                <a href="https://github.com/MarleenEliza" class="method">
+                    <span class="icon-large">
+                        <i class="fab fa-github"></i>
+                    </span>
+                    <span class="icon-text">GitHub</span>
+                </a>
+                <a href="https://www.wantedly.com/users/144786278" class="method">
+                    <span class="icon-large">
+                        <i class="fas fa-won-sign"></i>
+                    </span>
+                    <span class="icon-text">Wantedly</span>
+                </a>
+            </div>
+
+        </div>
+    </footer>
+    <!-- Scripts  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <script src="controller.js"></script>
+</body>
+
+</html>
