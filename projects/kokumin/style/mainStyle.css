@@ -1,0 +1,271 @@
+/* アイコンとグラフ用の色グループ */
+
+.pink {
+    color: #F78F8F;
+}
+
+.blue {
+    color: #9196F4;
+}
+
+.blue-bg {
+    background-color: #535bee;
+}
+
+.pink-bg {
+    background-color: #F78F8F;
+}
+
+/* Icons */
+
+.male-and-female {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 2rem;
+    max-height: 12rem;
+}
+
+/* Media Queryの仕組み：
+　  スマホ用：　Media Query無し 1 card,バックグランドが茶色
+　  タブレット用：600px 1card
+　  PC用：　1200px 2cards
+    大画面用：2000 px 3 cards
+*/
+
+body {
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+header, h3 {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+header {
+    display: grid;
+    padding: 2rem 1rem 0rem 1rem;
+    color: #1E1E1E;
+}
+
+header h1 {
+    font-size: 3.2rem;
+    margin: 0;
+    font-weight: 400;
+}
+
+header h2 {
+    margin: 0 0 0.5rem 0;
+    font-size: 2.2rem;
+    font-weight: 400;
+    text-align: right;
+}
+
+@media only screen and (min-width: 600px) {
+    header {
+        display: flex;
+        color: white;
+        background-color: #56494C;
+        padding: 2rem;
+        max-height: 15rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    header {
+        padding: 4rem 5rem 1rem 4rem;
+        max-height: 17rem;
+    }
+}
+
+.title {
+    justify-self: center;
+}
+
+.title h2 {
+    justify-self: right;
+}
+
+@media only screen and (min-width: 600px) {
+    .title {
+        width: max-content;
+        height: max-content;
+    }
+}
+
+.navigate-bar {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 1rem;
+    height: 3.3rem;
+    background-color: lightgray;
+}
+
+
+.search {
+    margin: .5rem;
+}
+
+img.icon {
+    height: 1.5rem;
+}
+
+@media only screen and (min-width: 600px) {
+    .navigate-bar {
+       margin: 0 1rem;
+       background-color: white;
+    }
+   
+    .search{
+        width: unset;
+    }
+   }
+
+/* データに関するCSS */
+
+#all-data {
+    padding: 0;
+    display: block;
+}
+
+@media only screen and (min-width: 600px) {
+    #all-data {
+        background-color: #F1F2EE;
+        padding: 1.5rem 0;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #all-data {
+        padding: 2rem 4rem;
+        display: grid;
+        justify-content: space-evenly;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto;
+        grid-row-gap: 1.5rem;
+        grid-column-gap: 2rem;
+    }
+}
+
+@media only screen and (min-width: 2000px) {
+    #all-data {
+        grid-template-columns: 33% 33% 33%;
+    }
+}
+
+.region {
+    background-color: #56494C;
+    color: black;
+    text-align: center;
+    padding: 1rem 0.3rem;
+    margin-bottom: 1.5rem;
+    border-radius: 0.6rem;
+    box-shadow: 1px 1px 5px lightgrey;
+}
+
+.region h3 {
+    color: white;
+}
+
+@media only screen and (min-width: 600px) {
+    .region {
+        background-color: white;
+        margin: 2rem;
+    }
+    .region h3 {
+        color: #56494C;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .region {
+        margin: 0
+    }
+}
+
+.prefecture-data {
+    display: grid;
+    margin: .25rem 1rem;
+    padding: 1rem 0.5rem;
+    background: white;
+    border-radius: 10px;
+    grid-template-columns: 20% 50% 30%;
+    grid-template-rows: auto auto auto;
+    grid-column-gap: 0.25rem;
+}
+
+.prefecture-data p {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    margin: 0;
+}
+
+@media only screen and (min-width: 600px) {
+    .prefecture-data {
+        margin: 0 1rem;
+        padding: 0.5rem 0;
+        justify-content: center;
+        grid-template-columns: 15% 70% 15%;
+    }
+    .prefecture-data:last-child {
+        border-bottom: 0;
+    }
+    .prefecture-data p {
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .prefecture-data {
+        grid-template-columns: 18% 62% 20%;
+    }
+}
+
+.progress {
+    display: flex;
+    background-color: #F1F2EE;
+    flex-direction: column;
+    height: 100%;
+    font-size: 1rem;
+    border: solid 1px lightgrey;
+}
+
+.progress-bar {
+    color: black;
+    border: solid 1px #56494C;
+    border-radius: 0.2rem;
+    align-self: flex-start;
+    min-height: 2rem;
+}
+
+.progress-bar:last-child {
+    color: white;
+}
+
+.progress-bar p {
+    display: none;
+    text-align: left;
+}
+
+.progress-bar p:last-child {
+    display: initial;
+    text-align: left;
+}
+
+@media only screen and (min-width: 600px) {
+    .progress {
+        flex-direction: unset;
+        min-width: none;
+        max-width: none;
+        border: none;
+        background-color: none;
+    }
+    .progress-bar p {
+        display: initial;
+        margin-left: 1rem;
+    }
+    .progress-bar p:last-child {
+        text-align: right;
+        margin-right: 1rem;
+    }
+}

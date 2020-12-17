@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Gravit.io -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    style="isolation:isolate" viewBox="0 0 93.543 164.409" width="93.543pt" height="164.409pt">
+    <defs>
+        <clipPath id="_clipPath_fZRn7P7DNEbNv87nsgdT3eOKeNgnDuPI">
+            <rect width="93.543" height="164.409" />
+        </clipPath>
+    </defs>
+    <g clip-path="url(#_clipPath_fZRn7P7DNEbNv87nsgdT3eOKeNgnDuPI)">
+        <g>
+            <path id="fem-body" class="body"
+                d=" M 46.155 53.081 C 36.072 53.081 19.714 56.554 15.904 64.621 Q 12.095 72.688 4.252 99.466 Q 5.26 106.3 6.717 108.205 Q 8.173 110.11 13.663 110.558 L 24.419 80.643 L 11.306 119.874 Q 29.727 119.423 29.685 120.53 Q 29.643 121.636 29.685 152.349 Q 33.495 155.711 37.864 155.711 Q 42.234 155.711 46.155 152.349 L 46.155 119.857 L 47.388 119.857 L 47.388 152.349 Q 49.069 155.599 54.446 155.711 Q 59.824 155.823 63.186 152.349 L 63.186 119.857 L 81.785 119.857 L 68.228 80.643 Q 78.984 110.782 79.768 110.558 C 80.552 110.334 84.362 110.11 86.714 108.205 Q 89.067 106.3 89.291 99.466 Q 83.017 74.032 77.079 64.621 C 71.141 55.21 56.239 53.081 46.155 53.081 Z  M 81.041 119.857 L 12.502 119.861"
+                fill-rule="evenodd" fill="white" vector-effect="non-scaling-stroke" stroke-width="6"
+                stroke="rgb(247,143,143)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="3" />
+            <ellipse class="head" vector-effect="non-scaling-stroke" cx="46.771653543306954" cy="27.205832983027726"
+                rx="18.519922702799043" ry="18.51046020511012" fill="white" stroke-width="6" stroke="rgb(247,143,143)"
+                stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="3" />
+        </g>
+    </g>
+</svg>

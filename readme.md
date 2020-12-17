@@ -12,7 +12,8 @@
 * 開発スキル、またはコーディングの独学の熱心を表す。このため、コーディング練習問題と個人プロジェクトの説明を記載した。
 
 # Demo
-簡単なStatic　Web Siteであるため、https://marleeneliza.github.io/　でアクセスできる。
+簡単なStatic　Web Siteであるため、https://marleeneliza.github.io
+でアクセスできる。
  
 # Environment
 HTML、CSS、Javascript
