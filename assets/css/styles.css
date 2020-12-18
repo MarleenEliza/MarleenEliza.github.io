@@ -110,6 +110,10 @@ a.nav-item {
 	min-width: 6.3rem;
 }
 
+.card-title {
+	font-weight: bold;
+}
+
 .card-img-top {
 	padding: .5rem .5rem 0 .5rem;
 }
