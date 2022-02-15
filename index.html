@@ -3,7 +3,6 @@
 
 <head>
     <title>Portfolio</title>
-    <!-- css files -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.1/css/bulma.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -54,90 +53,48 @@
             <span></span>
         </span>
     </nav>
-    <section id="about" class="about-me">
-        <div class="container has-text-centered">
-            <h3 class="title">Marleen Elisabeth Dijkman</h3>
-            <img class="avatar" src="assets/images/icon/avatar_svg.svg">
-        </div>
-        <div class="container">
-            <p class="intro">
-                はじめまして！オランダ出身の日本滞在の初級Front-End開発者です。経験はまだ少ないですが、コーディングが好きで、人のためになるクリエイティブなアプリケーションを作りたい！という気持ちが強くあります。
-            </p>
-        </div>
-        <div id="specifications" class="wrapper container">
-            <div class="spef skills">
-                <h3>Skills</h3>
-                <strong>コーディング</strong>
-                <p>JavaScript、HTML、CSS、クラウドの基礎知識（AWS・Azure）</p>
-                <strong>言語</strong>
-                <p>日本語、英語、オランダ語</p>
-                <strong>ソフトスキル</strong>
-                <p>チームワーク、コミュニケーション力</p>
+    <main>
+        <section id="about" class="about-me">
+            <div class="container has-text-centered">
+                <h3 class="title"><strong><em>M</em>arleen <em>E</em>lisabeth <em>D</em>ijkman</h3></strong>
+                <img class="avatar" src="assets/images/icon/avatar_svg.svg">
             </div>
-            <div class="spef education">
-                <h3>Education</h3>
-                <strong>学歴</strong></strong></strong>
-                <p>ライデン大学の日本学科学士卒業</p>
-                <strong>留学経験</strong>
-                <p>大阪大学1年間、長崎大学５ヶ月間</p>
-                <strong>資格</strong>
-                <p>Azure Administrator Associate</p>
+            <div class="container has-text-centered">
+                <p class="intro">
+                    Dutch Front-end Engineer based in Tokyo
+                </p>
             </div>
-        </div>
-    </section>
+            <div id="specifications" class="wrapper container">
+                <div class="spef skills">
+                    <h3>Skills</h3>
+                    <strong>Coding</strong>
+                    <p>JavaScript, Typescript, VueJS</p>
+                    <strong>Languages</strong>
+                    <p>Japanese, English, Dutch</p>
+                    <strong>Soft skills</strong>
+                    <p>Internationally-orientated, quick learner</p>
+                </div>
+                <div class="spef education">
+                    <h3>Education</h3>
+                    <strong>Bachelor</strong></strong></strong>
+                    <p>Leiden University Japan studies</p>
+                    <strong>Study abroad</strong>
+                    <p>Osaka University, Nagasaki University</p>
+                    <strong>Certificates</strong>
+                    <p>Azure Administrator Associate, JLPT N1</p>
+                </div>
+            </div>
+        </section>
 
-    <section id="works" class="section">
-        <div class="container">
-            <div class="has-text-centered">
-                <h3 class="title is-3">Works</h3>
+        <section id="works" class="section">
+            <div class="container">
+                <div class="has-text-centered">
+                    <h3 class="title is-3">Works</h3>
+                </div>
+                <h3>Coming soon</h3>
             </div>
-            <div class="wrapper">
-                <div class="card" id="memo-it">
-                    <img class="card-img-top" src="assets/images/VueJS-mock.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Memo-It!</h5>
-                        <p class="card-text">Vue JSとVuetifyを利用されるMemoアプリケーション。CSSで完全にResponsiveとなっている。アプリケーション実態はAWSのS3でラン中</p>
-                        <a href="http://memoit-deploy.s3-website-ap-northeast-1.amazonaws.com/" class="btn btn-light">Try</a>
-                        <a href="https://github.com/MarleenEliza/memo-app-vue/tree/main/memo_app" class="btn btn-light">See Code</a>
-                    </div>
-                </div>
-                <div class="card" id="population">
-                    <img class="card-img-top" src="assets/images/kokumin.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">都道府県別日本の人口</h5>
-                        <p class="card-text">HTML、CSS、Javascriptを利用し都道府県・性別に分けた日本国民のデータを一覧にした。JSで人数によるバーの大きさが指定されている。
-                        </p>
-                        <a href="projects/kokumin/index.html" class="btn btn-light">Try</a>
-                        <a href="https://github.com/MarleenEliza/MarleenEliza.github.io/tree/master/projects/kokumin" class="btn btn-light">See Code</a>
-                    </div>
-                </div>
-                <div class="card" id="price-plan">
-                    <img class="card-img-top" src="assets/images/price-mock.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Pricing Plan</h5>
-                        <p class="card-text">HTMLとCSSを利用し簡単なモダンなCardレイアウト。完全にResponsiveとなっている。</p>
-                        <a href="projects/price-plan/index.html" class="btn btn-light">Try</a>
-                        <a href="https://github.com/MarleenEliza/PracticePricingExercise" class="btn btn-light">See Code</a>
-                    </div>
-                </div>
-                <div class="card" id="avatar">
-                    <img class="card-img-top" src="assets/images/avatar.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Avatar</h5>
-                        <p class="card-text">自分自身の写真をFlat　Avatar化</p>
-                    </div>
-                </div>
-                <div class="card" id="desk">
-                    <img class="card-img-top" src="assets/images/desk.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Flat-art desk</h5>
-                        <p class="card-text">自分自身のデスクをFlatアート化に</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
+        </section>
+    </main>
 
     <footer id="contact-me" class="section">
         <div class="container">
