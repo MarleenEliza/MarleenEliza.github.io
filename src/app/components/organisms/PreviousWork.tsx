@@ -34,27 +34,37 @@ export default function PreviousWork({
         <div className="grid gap-6 w-full md:grid-cols-[auto_1fr] md:grid-rows-[auto_auto_auto_1fr] md:auto-rows-min">
           <div className="flex flex-col md:row-span-4 md:mr-10">
             <TextLink icon="thunder" href={url}>
-              {en.previous_works_try_out}{" "}
+              {en.previous_works.try_out}
             </TextLink>
             <TheVideo
               src={example_video_url}
               thumbnail={example_video_image}
             ></TheVideo>
           </div>
-          <SubParagraph title={en.previous_works_overview_title} icon="file">
+          <SubParagraph
+            isSkewed
+            title={en.previous_works.overview_title}
+            icon="file"
+          >
             <p>{overview}</p>
           </SubParagraph>
-          <SubParagraph title={en.previous_works_tech_stack_title} icon="test">
+          <SubParagraph
+            isSkewed
+            title={en.previous_works.tech_stack_title}
+            icon="test"
+          >
             <DiscList list={tech_stack} isParted></DiscList>
           </SubParagraph>
           <SubParagraph
-            title={en.previous_works_key_responsibilities_title}
+            isSkewed
+            title={en.previous_works.key_responsibilities_title}
             icon="key"
           >
             <DiscList list={key_responsibilities}></DiscList>
           </SubParagraph>
           <SubParagraph
-            title={en.previous_works_key_challenges_title}
+            isSkewed
+            title={en.previous_works.key_challenges_title}
             icon="question"
           >
             <DiscList list={key_challenges}></DiscList>
