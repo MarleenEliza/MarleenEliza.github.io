@@ -1,4 +1,3 @@
-import React from "react";
 import en from "@/dictionaries/en.json";
 import IconLink from "@/app/components/atoms/IconLink";
 

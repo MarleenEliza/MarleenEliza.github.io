@@ -1,4 +1,3 @@
-import React from "react";
 import IconContainer, {
   ICON_LIST,
   IconSize,

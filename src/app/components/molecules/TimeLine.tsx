@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function TimeLine() {
   return (
     <div className="w-[1px]  min-w-[1px] h-full bg-secondary-default ml-2 mr-4 md:mr-8 relative">

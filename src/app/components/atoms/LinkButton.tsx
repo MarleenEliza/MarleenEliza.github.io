@@ -1,5 +1,7 @@
-import React from "react";
-import IconContainer, { ICON_LIST, IconSize } from "./IconContainer";
+import IconContainer, {
+  ICON_LIST,
+  IconSize,
+} from "@/app/components/atoms/IconContainer";
 
 type LinkButtontProps = {
   href: string;

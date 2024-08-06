@@ -1,5 +1,3 @@
-import React from "react";
-
 type TheHeadingProps = {
   children: React.ReactNode;
 };

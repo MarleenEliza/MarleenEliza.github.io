@@ -1,5 +1,3 @@
-import React from "react";
-
 type DiscList = {
   list: string[];
   isParted?: boolean;

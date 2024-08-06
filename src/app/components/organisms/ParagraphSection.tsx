@@ -1,4 +1,3 @@
-import React from "react";
 import TheHeading from "@/app/components/atoms/TheHeading";
 
 type ParagraphSectionProps = {
