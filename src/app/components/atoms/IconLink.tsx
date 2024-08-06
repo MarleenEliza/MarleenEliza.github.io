@@ -14,12 +14,12 @@ export default function IconLink({ href, children, icon }: IconLinkProps) {
     <a
       href={href}
       target="_blank"
-      className="underline text-accent-light flex gap-2 text-sm md:text-md"
+      className="group transition underline text-accent-light flex gap-2 text-sm md:text-md hover:text-accent-dark"
     >
       <IconContainer
         icon={icon}
         size={IconSize.small}
-        className="text-accent-default"
+        className="text-accent-default group-hover:text-accent-dark"
       />
       {children}
     </a>
