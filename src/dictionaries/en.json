@@ -1,0 +1,60 @@
+{
+  "title": "MarleenEliza",
+  "description": "portfolio for MarleenEliza",
+  "header_sub": "Front-end Software Developer",
+  "footer_main": "Connect with me",
+  "footer_linkedIn": "LinkedIn",
+  "footer_github": "Github",
+  "footer_linkedIn_url": "www.linkedin.com/in/medijkman",
+  "footer_github_url": "https://github.com/MarleenEliza",
+  "about_me_header": "About Me",
+  "profile_picture_alt": "profile picture of author",
+  "about_me_image_p": "is what I often answer when asked to describe my career. Combining intercultural knowledge with coding skills and a passion for UX and UI, I thrive in international environments where I can directly collaborate with team members and clients from diverse backgrounds and fields of expertise.",
+  "about_me_image_eye_catcher": "Sociable Developer",
+  "previous_works_header": "Previous Works",
+  "previous_works_try_out": "Try it out!",
+  "previous_works_overview_title": "Overview",
+  "previous_works_tech_stack_title": "Tech Stack",
+  "previous_works_key_responsibilities_title": "Key Responsibilities",
+  "previous_works_key_challenges_title": "Key Challenges",
+  "previous_works_1": {
+    "title": "Animated landing page with SVG morphing",
+    "url": "https://www.apk.todabuilding.com/",
+    "example_video_url": "/video/project_1_demo.mov",
+    "example_video_image": "/pictures/project_1_demo.png",
+    "overview": "Whilst working at an international design company, I was part of a project to work on a landing page for an art institution. The page should feel unique and ‘alive’; constant movement is to be expected.",
+    "key_responsibilities": [
+      "In charge of all the animated elements including SVG morphed shapes and waves",
+      "Working together closely with the designer (client), to ensure that their unique vision was put to live."
+    ],
+    "key_challenges": [
+      "The page featured an iconic. morphing animation at the beginning in which very specific shaped elements should smoothly morph into other very specifically shaped SVGs. This was something I had never done before and getting the animation to feel smooth was a challenge with just CSS.",
+      "The overlapping colors of the morphing animation at the begging should feel dymanic and interact with one another; changing the color to either white or purple. It was challenging to ensure the right color for each element and required a lot of layering and usage of css-blend-mode"
+    ],
+    "tech_stack": ["React", "TypeScript", "NextJS", "Storybook", "TailwindCSS"]
+  },
+  "previous_works_2": {
+    "title": "3D gallery NFT smart phone web application",
+    "url": "https://rooms.snft.jp/welcome",
+    "example_video_url": "/video/project_2_demo.mov",
+    "example_video_image": "/pictures/project_2_demo.png",
+    "overview": "A landing page for a 3D gallery in which the user can decorate their own 'room' with their bought NFTs from NFT store made by my client. The user should be able to freely and playfully interact with their beloved NFTs and be able to share their creativity with others",
+    "key_responsibilities": [
+      "In charge of the enitre front end development",
+      "Small UI/UX design tasks"
+    ],
+    "key_challenges": [
+      "The 3D gallery itself is sustained by Unreal Engine with a plugin called PixelStreaming. There is very little documentation on this plugin and a lot of research was needed to ensure a smooth connection between the VideoStream in FE and the UE server in the backend"
+    ],
+    "tech_stack": [
+      "UnrealEngine",
+      "AWS",
+      "React",
+      "TypeScript",
+      "NextJS",
+      "Storybook",
+      "TailwindCSS"
+    ]
+  },
+  "video_unssupported": "Your browser does not support the video tag."
+}
