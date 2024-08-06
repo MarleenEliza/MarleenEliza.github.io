@@ -2,34 +2,64 @@
   "title": "MarleenEliza",
   "description": "portfolio for MarleenEliza",
   "header_sub": "Front-end Software Developer",
-  "footer_main": "Connect with me",
-  "footer_linkedIn": "LinkedIn",
-  "footer_github": "Github",
-  "footer_linkedIn_url": "www.linkedin.com/in/medijkman",
-  "footer_github_url": "https://github.com/MarleenEliza",
-  "about_me_header": "About Me",
-  "profile_picture_alt": "profile picture of author",
-  "about_me_image_p": "is what I often answer when asked to describe my career. Combining intercultural knowledge with coding skills and a passion for UX and UI, I thrive in international environments where I can directly collaborate with team members and clients from diverse backgrounds and fields of expertise.",
-  "about_me_image_eye_catcher": "Sociable Developer",
-  "previous_works_header": "Previous Works",
-  "previous_works_try_out": "GO!",
-  "previous_works_overview_title": "Overview",
-  "previous_works_tech_stack_title": "Tech Stack",
-  "previous_works_key_responsibilities_title": "Key Responsibilities",
-  "previous_works_key_challenges_title": "Key Challenges",
+  "footer": {
+    "github": {
+      "icon": "Github",
+      "title": "Github",
+      "href": "https://github.com/MarleenEliza"
+    },
+    "linkedIn": {
+      "icon": "linkedIn",
+      "title": "LinkedIn",
+      "href": "www.linkedin.com/in/medijkman"
+    },
+    "resume": {
+      "icon": "download",
+      "href": "/files/resume_Marleen_Dijkman.pdf",
+      "title": "CV"
+    }
+  },
+  "about_me": {
+    "heading": "About Me",
+    "image_url": "/pictures/profile_pic.jpeg",
+    "image_url_alt": "profile picture of author",
+    "p": "is what I often answer when asked to describe my career. Combining intercultural knowledge with coding skills and a passion for UX and UI, I thrive in international environments where I can directly collaborate with team members and clients from diverse backgrounds and fields of expertise.",
+    "eye_catcher": "Sociable Developer"
+  },
+  "about_me_work": {
+    "p": "I am not a one-track minded person and thrive in a diverse environment with a variety of tasks and an intercultural environment. Furthermore, I enjoy creating things from scratch and am a firm lover of strongly typed langauges and rigid component structures. But don't take my word for it, have a look at the UI design + <a href='https://github.com/MarleenEliza/MarleenEliza.github.io'  target='_blank' class='underline text-accent-dark'> code structure of this portfolio </a> or my previous works below.",
+    "icon": "pc",
+    "title": "Who am I at work?",
+    "image_url": "/pictures/demo_design.png",
+    "image_url_alt": "design process behind this portfolio"
+  },
+  "about_me_hobby": {
+    "p": "I tend to be a rather serious person during office hours and highly value my career, but I am also very active in my private life. Most of the time you can find me playing on my piano, travelling or in the gym. Music is a big part of my life and am quite famous among my friends as the 'concert girl' since I am either attending a concert or giving one <a href='https://www.instagram.com/marble.music4/'  target='_blank' class='underline text-accent-dark'> myself</a>!",
+    "icon": "music",
+    "title": "Who am I outside of work?",
+    "image_url": ""
+  },
+  "previous_works": {
+    "heading": "Previous Works",
+    "try_out": "GO!",
+    "overview_title": "Overview",
+    "tech_stack_title": "Tech Stack",
+    "key_responsibilities_title": "Key Responsibilities",
+    "key_challenges_title": "Key Challenges"
+  },
   "previous_works_1": {
     "title": "Animated landing page with SVG morphing",
     "url": "https://www.apk.todabuilding.com/",
     "example_video_url": "/video/project_1_demo.mov",
     "example_video_image": "/pictures/project_1_demo.png",
-    "overview": "Whilst working at an international design company, I was part of a project to work on a landing page for an art institution. The page should feel unique and ‘alive’; constant movement is to be expected.",
+    "overview": "Whilst working at an international design company, I was part of a project to work on a landing page for an art institution. The page should feel unique and ‘alive’.",
     "key_responsibilities": [
-      "In charge of all the animated elements including SVG morphed shapes and waves",
-      "Working together closely with the designer (client), to ensure that their unique vision was put to live."
+      "In charge of all the animated elements including SVG morphed shapes and waves.",
+      "Working together closely with the designer (client), to ensure that their unique vision was put to life."
     ],
     "key_challenges": [
-      "The page featured an iconic. morphing animation at the beginning in which very specific shaped elements should smoothly morph into other very specifically shaped SVGs. This was something I had never done before and getting the animation to feel smooth was a challenge with just CSS.",
-      "The overlapping colors of the morphing animation at the begging should feel dymanic and interact with one another; changing the color to either white or purple. It was challenging to ensure the right color for each element and required a lot of layering and usage of css-blend-mode"
+      "The page featured an iconic morphing animation at the beginning in which very specific shaped elements should smoothly morph into other very specifically shaped SVGs while mainting the shape of the logo. This was something I had never done before and getting the animation to feel smooth was a challenge with just CSS.",
+      "The overlapping colors of the morphing animation at the beginning should feel dymanic and interact with one another; changing the color to either white or purple. It was challenging to ensure the right color for each element and required a lot of layering and usage of 'css-blend-mode'."
     ],
     "tech_stack": ["React", "TypeScript", "NextJS", "Storybook", "TailwindCSS"]
   },
@@ -38,13 +68,13 @@
     "url": "https://rooms.snft.jp/welcome",
     "example_video_url": "/video/project_2_demo.mov",
     "example_video_image": "/pictures/project_2_demo.png",
-    "overview": "A landing page for a 3D gallery in which the user can decorate their own 'room' with their bought NFTs from NFT store made by my client. The user should be able to freely and playfully interact with their beloved NFTs and be able to share their creativity with others",
+    "overview": "A landing page for a 3D gallery in which the user can decorate their own 'room' with their bought NFTs from NFT store made by my client. The user should be able to freely and playfully interact with their beloved NFTs.",
     "key_responsibilities": [
-      "In charge of the enitre front end development",
-      "Small UI/UX design tasks"
+      "In charge of the enitre front end development.",
+      "Small UI/UX design tasks."
     ],
     "key_challenges": [
-      "The 3D gallery itself is sustained by Unreal Engine with a plugin called PixelStreaming. There is very little documentation on this plugin and a lot of research was needed to ensure a smooth connection between the VideoStream in FE and the UE server in the backend"
+      "The 3D gallery itself is sustained by Unreal Engine with a plugin called 'PixelStreaming'. There is very little documentation on this plugin and a lot of research was needed to ensure a smooth connection between the VideoStream in FE and the UE server in the backend."
     ],
     "tech_stack": [
       "UnrealEngine",

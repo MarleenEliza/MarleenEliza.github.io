@@ -5,23 +5,28 @@ import IconContainer, {
 
 type SubParagraphProps = {
   title: string;
-  icon: Icon;
+  icon: string;
   children: React.ReactNode;
+  isSkewed?: boolean;
 };
 export default function SubParagraph({
   title,
   children,
   icon,
+  isSkewed = false,
 }: SubParagraphProps) {
   return (
     <div>
-      <div className="flex items-center bg-accent-light translate-x-[-1.7rem] gap-2 py-2">
+      <div
+        className={`flex items-center ${
+          isSkewed && "translate-x-[-1.7rem] bg-accent-light"
+        } md:translate-x-0 gap-2 py-2`}
+      >
         <IconContainer
           size={IconSize.medium}
-          icon={icon}
+          icon={icon as Icon}
           className="text-accent-default"
         ></IconContainer>
-        {/* <span className="absolute rounded-full h-[9px] w-[9px] md:h-[12px] md:w-[12px] left-[-1rem] translate-x-[-50%] top-[6px] bg-accent-default "></span> */}
         <h4 className="text-accent-dark italic">{title}</h4>
       </div>
 
