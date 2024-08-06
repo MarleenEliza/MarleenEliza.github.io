@@ -1,12 +1,12 @@
 import IconContainer, {
-  ICON_LIST,
+  Icon,
   IconSize,
 } from "@/app/components/atoms/IconContainer";
 
 type IconLinkProps = {
   href: string;
   children: React.ReactNode;
-  icon: (typeof ICON_LIST)[number];
+  icon: Icon;
 };
 
 export default function IconLink({ href, children, icon }: IconLinkProps) {

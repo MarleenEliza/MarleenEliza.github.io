@@ -1,11 +1,11 @@
 import IconContainer, {
-  ICON_LIST,
+  Icon,
   IconSize,
 } from "@/app/components/atoms/IconContainer";
 
 type SubParagraphProps = {
   title: string;
-  icon: (typeof ICON_LIST)[number];
+  icon: Icon;
   children: React.ReactNode;
 };
 export default function SubParagraph({

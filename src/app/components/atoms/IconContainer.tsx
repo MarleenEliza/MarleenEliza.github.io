@@ -12,7 +12,7 @@ export enum IconSize {
   medium = 24,
 }
 
-export const ICON_LIST = [
+const ICON_LIST = [
   "Github",
   "linkedIn",
   "question",
@@ -22,7 +22,9 @@ export const ICON_LIST = [
   "thunder",
 ] as const;
 
-const ICON_MAP = new Map<(typeof ICON_LIST)[number], React.FC>([
+export type Icon = (typeof ICON_LIST)[number];
+
+const ICON_MAP = new Map<Icon, React.FC>([
   ["Github", IconGithub],
   ["linkedIn", IconLinkedIn],
   ["question", IconQuestion],
@@ -33,7 +35,7 @@ const ICON_MAP = new Map<(typeof ICON_LIST)[number], React.FC>([
 ]);
 
 type IconContainerProps = {
-  icon: (typeof ICON_LIST)[number];
+  icon: Icon;
   size: IconSize;
   className: string;
 };
