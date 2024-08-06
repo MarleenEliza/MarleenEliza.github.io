@@ -1,25 +1,25 @@
-import React from "react";
 import IconContainer, {
-  ICON_LIST,
+  Icon,
   IconSize,
 } from "@/app/components/atoms/IconContainer";
 
 type IconLinkProps = {
   href: string;
   children: React.ReactNode;
-  icon: (typeof ICON_LIST)[number];
+  icon: Icon;
 };
 
 export default function IconLink({ href, children, icon }: IconLinkProps) {
   return (
     <a
       href={href}
-      className="underline text-accent-light flex gap-2 text-sm md:text-md"
+      target="_blank"
+      className="group transition underline text-accent-light flex gap-2 text-sm md:text-md hover:text-accent-dark"
     >
       <IconContainer
         icon={icon}
         size={IconSize.small}
-        className="text-accent-default"
+        className="text-accent-default group-hover:text-accent-dark"
       />
       {children}
     </a>

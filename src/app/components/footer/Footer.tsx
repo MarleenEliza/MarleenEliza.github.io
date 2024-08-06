@@ -1,10 +1,9 @@
-import React from "react";
 import en from "@/dictionaries/en.json";
 import IconLink from "@/app/components/atoms/IconLink";
 
 export default function Footer() {
   return (
-    <footer className="bg-secondary-default fixed z-10 bottom-0 w-full flex h-[6rem] pt-4 md:pt-6 pl-4 md:pl-6 gap-4">
+    <footer className="opacity-95 bg-secondary-default fixed z-10 bottom-0 w-full flex h-[6rem] pt-4 md:pt-6 pl-4 md:pl-6 gap-4">
       <IconLink icon="Github" href={en.footer_github_url}>
         {en.footer_github}
       </IconLink>
