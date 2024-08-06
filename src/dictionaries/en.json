@@ -11,11 +11,11 @@
     "linkedIn": {
       "icon": "linkedIn",
       "title": "LinkedIn",
-      "href": "www.linkedin.com/in/medijkman"
+      "href": "https://www.linkedin.com/in/medijkman/"
     },
     "resume": {
       "icon": "download",
-      "href": "/files/resume_Marleen_Dijkman.pdf",
+      "href": "/files/marleen_dijkman_cv_public.pdf",
       "title": "CV"
     }
   },
