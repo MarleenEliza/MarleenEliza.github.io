@@ -5,10 +5,10 @@ import en from "@/dictionaries/en.json";
 
 export default function Home() {
   return (
-    <main className="flex flex-grow h-full flex-col items-center justify-between pt-[9rem] pb-[6rem] w-full overflow-auto">
+    <main className="flex flex-grow h-full flex-col items-center justify-between pt-[9rem] pb-[6rem] w-full overflow-auto no-scrollbar">
       <ParagraphSection title={en.about_me_header}>
         <ImageParagraph
-          src="/profile_pic.jpeg"
+          src="/pictures/profile_pic.jpeg"
           alt={en.profile_picture_alt}
           eyeCatcher={en.about_me_image_eye_catcher}
         >

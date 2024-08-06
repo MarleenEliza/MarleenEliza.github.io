@@ -14,7 +14,7 @@ export default function ImageParagraph({
   alt,
 }: ImageParagraphProps) {
   return (
-    <div className="grid grid-cols-3 gap-4 md:grid-cols-8">
+    <div className="grid grid-cols-3 gap-4 md:grid-cols-7">
       <Image
         src={src}
         alt={alt}
@@ -22,7 +22,7 @@ export default function ImageParagraph({
         height={500}
         className="rounded-full self-center"
       ></Image>
-      <div className="col-span-2 md:col-span-7 md:m-auto">
+      <div className="col-span-2 md:col-span-6 md:m-auto">
         <h4 className="text-accent-dark italic pb-2">
           &quot;{eyeCatcher}&quot;
         </h4>

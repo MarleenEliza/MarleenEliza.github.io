@@ -1,10 +1,9 @@
 import TimeLine from "@/app/components/molecules/TimeLine";
 import TheVideo from "@/app/components/atoms/TheVideo";
-import TextLink from "@/app/components/atoms/TextLink";
+import TextLink from "@/app/components/atoms/LinkButton";
 import DiscList from "@/app/components/molecules/DiscList";
 import en from "@/dictionaries/en.json";
-import SubParagraph from "../molecules/SubParagraph";
-import Image from "next/image";
+import SubParagraph from "@/app/components/molecules/SubParagraph";
 
 type PreviousWorkProps = {
   title: string;
@@ -28,26 +27,36 @@ export default function PreviousWork({
   example_video_image,
 }: PreviousWorkProps) {
   return (
-    <div className="flex flex-col mb-8 ml-2">
-      <h3 className="font-bold">{title}</h3>
+    <div className="flex flex-col mb-8 md:mb-14 ml-2">
+      <h3 className="font-bold mb-4 text-md">{title}</h3>
       <div className="flex h-full mt-2">
         <TimeLine></TimeLine>
-        <div className="flex flex-col gap-6 w-full">
-          <TextLink href={url}>{en.previous_works_try_out} </TextLink>
-          <TheVideo
-            src={example_video_url}
-            thumbnail={example_video_image}
-          ></TheVideo>
-          <SubParagraph title={en.previous_works_overview_title}>
+        <div className="grid gap-6 w-full md:grid-cols-[auto_1fr] md:grid-rows-[auto_auto_auto_1fr] md:auto-rows-min">
+          <div className="flex flex-col md:row-span-4 md:mr-10">
+            <TextLink icon="thunder" href={url}>
+              {en.previous_works_try_out}{" "}
+            </TextLink>
+            <TheVideo
+              src={example_video_url}
+              thumbnail={example_video_image}
+            ></TheVideo>
+          </div>
+          <SubParagraph title={en.previous_works_overview_title} icon="file">
             <p>{overview}</p>
           </SubParagraph>
-          <SubParagraph title={en.previous_works_tech_stack_title}>
+          <SubParagraph title={en.previous_works_tech_stack_title} icon="test">
             <DiscList list={tech_stack} isParted></DiscList>
           </SubParagraph>
-          <SubParagraph title={en.previous_works_key_responsibilities_title}>
+          <SubParagraph
+            title={en.previous_works_key_responsibilities_title}
+            icon="key"
+          >
             <DiscList list={key_responsibilities}></DiscList>
           </SubParagraph>
-          <SubParagraph title={en.previous_works_key_challenges_title}>
+          <SubParagraph
+            title={en.previous_works_key_challenges_title}
+            icon="question"
+          >
             <DiscList list={key_challenges}></DiscList>
           </SubParagraph>
         </div>

@@ -7,7 +7,14 @@ type TheVideoProps = {
 };
 export default function TheVideo({ src, thumbnail }: TheVideoProps) {
   return (
-    <video width="356" height="762" controls preload="none" poster={thumbnail}>
+    <video
+      className="md:row-span-4 md:self-center"
+      width="356"
+      height="762"
+      controls
+      preload="none"
+      poster={thumbnail}
+    >
       <source src={src} />
       {en.video_unssupported}
     </video>
