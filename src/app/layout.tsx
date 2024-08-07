@@ -4,6 +4,7 @@ import Header from "@/app/components/header/Header";
 import Footer from "@/app/components/footer/Footer";
 import { DM_Sans } from "next/font/google";
 import en from "@/dictionaries/en.json";
+import GoogleAnalytics from "@/app/components/atoms/GoogleAnalytics";
 
 const DMSans = DM_Sans({
   subsets: ["latin"],
@@ -22,6 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <GoogleAnalytics></GoogleAnalytics>
       <body className={`${DMSans.className} h-screen flex flex-col bg-white`}>
         <Header></Header>
         {children}

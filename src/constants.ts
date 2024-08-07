@@ -1,0 +1,1 @@
+export const G_ANALYTICS = 'G-J8YZ9YFYNH';
