@@ -1,7 +1,11 @@
+"use client";
+
 import IconContainer, {
   Icon,
   IconSize,
 } from "@/app/components/atoms/IconContainer";
+import { fadeIntoView } from "@/utils/FadeIntoView";
+import { useRef, useState, useEffect } from "react";
 
 type SubParagraphProps = {
   title: string;
@@ -15,8 +19,17 @@ export default function SubParagraph({
   icon,
   isSkewed = false,
 }: SubParagraphProps) {
+  const ref = useRef<HTMLDivElement>(null);
+  const [isVisible, setIsVisible] = useState(false);
+  useEffect(() => {
+    fadeIntoView(ref, setIsVisible);
+  }, []);
+
   return (
-    <div>
+    <div
+      ref={ref}
+      className={isVisible ? "animate-fade-in-from-left" : "opacity-0"}
+    >
       <div
         className={`flex items-center ${
           isSkewed && "translate-x-[-1.7rem] bg-accent-light"

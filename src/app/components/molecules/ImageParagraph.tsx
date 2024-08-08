@@ -1,4 +1,8 @@
+"use client";
+
+import { fadeIntoView } from "@/utils/FadeIntoView";
 import Image from "next/image";
+import { useRef, useState, useEffect } from "react";
 
 type ImageParagraphProps = {
   src: string;
@@ -12,8 +16,19 @@ export default function ImageParagraph({
   children,
   alt,
 }: ImageParagraphProps) {
+  const ref = useRef<HTMLDivElement>(null);
+  const [isVisible, setIsVisible] = useState(false);
+  useEffect(() => {
+    fadeIntoView(ref, setIsVisible);
+  }, []);
+
   return (
-    <div className="grid grid-cols-3 gap-4 md:grid-cols-7">
+    <div
+      ref={ref}
+      className={`grid grid-cols-3 gap-4 md:grid-cols-7 ${
+        isVisible ? "animate-fade-in-from-left" : "opacity-0"
+      }`}
+    >
       <Image
         src={src}
         alt={alt}
