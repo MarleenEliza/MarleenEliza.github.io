@@ -9,10 +9,11 @@ import IconThunder from "./icons/IconThunder";
 import IconMusic from "./icons/IconMusic";
 import IconPc from "./icons/IconPc";
 import IconDownload from "./icons/IconDownload";
+import IconMedium from "./icons/IconMedium";
 
 export enum IconSize {
   small = 18,
-  medium = 24,
+  medium = 25,
 }
 
 const ICON_LIST = [
@@ -26,6 +27,7 @@ const ICON_LIST = [
   "music",
   "pc",
   "download",
+  "medium",
 ] as const;
 
 export type Icon = (typeof ICON_LIST)[number];
@@ -41,6 +43,7 @@ const ICON_MAP = new Map<Icon, React.FC>([
   ["music", IconMusic],
   ["pc", IconPc],
   ["download", IconDownload],
+  ["medium", IconMedium],
 ]);
 
 type IconContainerProps = {

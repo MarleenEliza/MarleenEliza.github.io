@@ -1,6 +1,6 @@
 import en from "@/dictionaries/en.json";
 
-export default function Header() {
+export default function TheHeader() {
   return (
     <header className="opacity-90 mix-blend-luminosity bg-secondary-default z-10 fixed top-0 w-full h-[6rem] flex flex-col justify-center text-white pl-10 md:pl-[3rem]">
       <h1 className="text-2xl md:text-3xl text-left">{en.title}</h1>
