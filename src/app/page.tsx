@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex flex-grow h-full flex-col items-center justify-between pt-[9rem] pb-[6rem] w-full overflow-auto no-scrollbar">
+    <main className="flex flex-grow h-full flex-col items-center justify-between pt-[7rem] pb-[6rem] w-full overflow-auto no-scrollbar">
       <ParagraphSection title={en.about_me.heading}>
         <ImageParagraph
           src={en.about_me.image_url}
@@ -20,7 +20,7 @@ export default function Home() {
         <SubParagraph {...en.about_me_work}>
           <p dangerouslySetInnerHTML={{ __html: en.about_me_work.p }}></p>
           <Image
-            className="mt-4"
+            className="mt-4 md:mt-6"
             width={1187}
             height={642}
             src={en.about_me_work.image_url}

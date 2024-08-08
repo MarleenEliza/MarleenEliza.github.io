@@ -25,7 +25,7 @@ export default function ImageParagraph({
   return (
     <div
       ref={ref}
-      className={`grid grid-cols-3 gap-4 md:grid-cols-7 ${
+      className={`grid gap-4 md:grid-cols-3 md:gap-10 ${
         isVisible ? "animate-fade-in-from-left" : "opacity-0"
       }`}
     >
@@ -34,9 +34,9 @@ export default function ImageParagraph({
         alt={alt}
         width={500}
         height={500}
-        className="rounded-full self-center"
+        className="rounded-full self-center justify-self-center max-w-[70%] justify-center"
       ></Image>
-      <div className="col-span-2 md:col-span-6 md:m-auto">
+      <div className="md:col-span-2 md:m-auto">
         <h4 className="text-accent-dark italic pb-2">
           &quot;{eyeCatcher}&quot;
         </h4>

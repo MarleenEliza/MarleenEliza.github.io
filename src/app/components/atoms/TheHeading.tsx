@@ -1,3 +1,5 @@
+"use client";
+
 import { fadeIntoView } from "@/utils/FadeIntoView";
 import { useRef, useState, useEffect } from "react";
 

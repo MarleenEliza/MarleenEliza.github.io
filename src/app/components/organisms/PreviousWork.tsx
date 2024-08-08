@@ -43,7 +43,7 @@ export default function PreviousWork({
         isVisible ? "animate-fade-in-from-left" : "opacity-0"
       }`}
     >
-      <h3 className="font-bold mb-4 text-[1rem]">{title}</h3>
+      <h3 className="font-bold mb-4 md:text-xl text-[1rem]">{title}</h3>
       <div className="flex h-full mt-2">
         <TimeLine></TimeLine>
         <div className="grid gap-6 w-full md:grid-cols-[auto_1fr] md:grid-rows-[auto_auto_auto_1fr] md:auto-rows-min">
