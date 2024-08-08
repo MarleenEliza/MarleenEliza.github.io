@@ -25,10 +25,10 @@ export default function IconLink({
     >
       <IconContainer
         icon={icon as Icon}
-        size={IconSize.small}
+        size={IconSize.medium}
         className="text-accent-default group-hover:text-accent-dark"
       />
-      {children}
+      <span className="hidden md:block">{children}</span>
     </a>
   );
 }

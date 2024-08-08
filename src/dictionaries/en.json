@@ -13,6 +13,11 @@
       "title": "LinkedIn",
       "href": "https://www.linkedin.com/in/medijkman/"
     },
+    "medium": {
+      "icon": "medium",
+      "href": "https://medium.com/@stella.marley",
+      "title": "Medium"
+    },
     "resume": {
       "icon": "download",
       "href": "/files/marleen_dijkman_cv_public.pdf",
