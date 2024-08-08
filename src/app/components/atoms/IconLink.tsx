@@ -20,7 +20,7 @@ export default function IconLink({
     <a
       href={href}
       target="_blank"
-      className="group transition underline text-accent-light flex gap-2 text-sm md:text-md hover:text-accent-dark"
+      className="group transition underline text-accent-light flex gap-2 hover:text-accent-dark"
       download={isDownload}
     >
       <IconContainer

@@ -1,9 +1,13 @@
+"use client";
+
 import TimeLine from "@/app/components/molecules/TimeLine";
 import TheVideo from "@/app/components/atoms/TheVideo";
 import TextLink from "@/app/components/atoms/LinkButton";
 import DiscList from "@/app/components/molecules/DiscList";
 import en from "@/dictionaries/en.json";
 import SubParagraph from "@/app/components/molecules/SubParagraph";
+import { useEffect, useRef, useState } from "react";
+import { fadeIntoView } from "@/utils/FadeIntoView";
 
 type PreviousWorkProps = {
   title: string;
@@ -26,9 +30,20 @@ export default function PreviousWork({
   example_video_url,
   example_video_image,
 }: PreviousWorkProps) {
+  const ref = useRef<HTMLDivElement>(null);
+  const [isVisible, setIsVisible] = useState(false);
+  useEffect(() => {
+    fadeIntoView(ref, setIsVisible);
+  }, []);
+
   return (
-    <div className="flex flex-col mb-8 md:mb-14 ml-2">
-      <h3 className="font-bold mb-4 text-md">{title}</h3>
+    <div
+      ref={ref}
+      className={`flex flex-col mb-8 md:mb-14 ml-2 ${
+        isVisible ? "animate-fade-in-from-left" : "opacity-0"
+      }`}
+    >
+      <h3 className="font-bold mb-4 md:text-xl text-[1rem]">{title}</h3>
       <div className="flex h-full mt-2">
         <TimeLine></TimeLine>
         <div className="grid gap-6 w-full md:grid-cols-[auto_1fr] md:grid-rows-[auto_auto_auto_1fr] md:auto-rows-min">
