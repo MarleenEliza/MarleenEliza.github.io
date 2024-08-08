@@ -1,7 +1,7 @@
 import en from "@/dictionaries/en.json";
 import IconLink from "@/app/components/atoms/IconLink";
 
-export default function Footer() {
+export default function TheFooter() {
   return (
     <footer className="opacity-95 bg-secondary-default fixed z-10 bottom-0 w-full flex h-[6rem] pt-4 md:pt-6 pl-4 md:pl-6 gap-4">
       {Object.values(en.footer).map((item, index) => {

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Header from "@/app/components/header/Header";
-import Footer from "@/app/components/footer/Footer";
+import TheHeader from "@/app/components/organisms/TheHeader";
+import TheFooter from "@/app/components/organisms/TheFooter";
 import { DM_Sans } from "next/font/google";
 import en from "@/dictionaries/en.json";
 import GoogleAnalytics from "@/app/components/atoms/GoogleAnalytics";
@@ -25,9 +25,9 @@ export default function RootLayout({
     <html lang="en">
       <GoogleAnalytics></GoogleAnalytics>
       <body className={`${DMSans.className} h-screen flex flex-col bg-white`}>
-        <Header></Header>
+        <TheHeader></TheHeader>
         {children}
-        <Footer></Footer>
+        <TheFooter></TheFooter>
       </body>
     </html>
   );
