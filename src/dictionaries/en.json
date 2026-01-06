@@ -26,7 +26,7 @@
   },
   "about_me": {
     "heading": "About Me",
-    "image_url": "/pictures/profile_pic.jpeg",
+    "image_url": "/pictures/profile_pic.avif",
     "image_url_alt": "profile picture of author",
     "p": "is what I often answer when asked to describe my career. Combining intercultural knowledge with coding skills and a passion for UX and UI, I thrive in international environments where I can directly collaborate with team members and clients from diverse backgrounds and fields of expertise.",
     "eye_catcher": "Sociable Developer"
@@ -53,10 +53,27 @@
     "key_challenges_title": "Key Challenges"
   },
   "previous_works_1": {
-    "title": "Animated landing page with SVG morphing",
-    "url": "https://www.apk.todabuilding.com/",
+    "title": "Bold landing page for a music festival",
+    "url": "https://dgtl-festival.com/en/",
     "example_video_url": "/video/project_1_demo.mov",
     "example_video_image": "/pictures/project_1_demo.png",
+    "overview": "I was part of a project to work on a landing page for a music festival. The page should feel bold and engaging.",
+    "key_responsibilities": [
+      "In charge ofm most of the front end development.",
+      "Working together closely with the designer, to ensure that the design was put to life."
+    ],
+    "key_challenges": [
+      "Working with a lot of videos and animations, whilst keeping the page performant and responsive.",
+      "Complicated, real-time festival schedule with a lot of different artists and events.",
+      "Integration with the client's webshop SDK."
+    ],
+    "tech_stack": ["Astro", "TypeScript", "DatoCMS"]
+  },
+  "previous_works_2": {
+    "title": "Animated landing page with SVG morphing",
+    "url": "https://www.apk.todabuilding.com/",
+    "example_video_url": "/video/project_2_demo.mov",
+    "example_video_image": "/pictures/project_2_demo.png",
     "overview": "Whilst working at an international design company, I was part of a project to work on a landing page for an art institution. The page should feel unique and ‘alive’.",
     "key_responsibilities": [
       "In charge of all the animated elements including SVG morphed shapes and waves.",
@@ -68,11 +85,11 @@
     ],
     "tech_stack": ["React", "TypeScript", "NextJS", "Storybook", "TailwindCSS"]
   },
-  "previous_works_2": {
+  "previous_works_3": {
     "title": "3D gallery NFT smart phone web application",
     "url": "https://rooms.snft.jp/welcome",
-    "example_video_url": "/video/project_2_demo.mov",
-    "example_video_image": "/pictures/project_2_demo.png",
+    "example_video_url": "/video/project_3_demo.mov",
+    "example_video_image": "/pictures/project_3_demo.png",
     "overview": "A landing page for a 3D gallery in which the user can decorate their own 'room' with their bought NFTs from NFT store made by my client. The user should be able to freely and playfully interact with their beloved NFTs.",
     "key_responsibilities": [
       "In charge of the enitre front end development.",

@@ -33,8 +33,12 @@ export default function Home() {
       </ParagraphSection>
 
       <ParagraphSection title={en.previous_works.heading}>
+        <p>
+          A showcase of some of my previous works. I have worked on a wide range of projects, but not all of them are available for public viewing so this is only a very small selection.
+        </p>
         <PreviousWork {...en.previous_works_1}></PreviousWork>
         <PreviousWork {...en.previous_works_2}></PreviousWork>
+        <PreviousWork {...en.previous_works_3}></PreviousWork>
       </ParagraphSection>
     </main>
   );
