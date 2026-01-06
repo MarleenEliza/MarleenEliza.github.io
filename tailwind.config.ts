@@ -23,9 +23,9 @@ const config: Config = {
       },
       colors: {
         'white': '#fff',
-        'accent-light': '#FFFBDA',
-        'accent-default': '#FFC700',
-        'accent-dark': '#9C7C08',
+        'accent-light': '#F3F3F3',
+        'accent-default': '#08AEB8',
+        'accent-dark': '#194C58',
         'text': '#181818',
         'secondary-default': '#595958',
       },
